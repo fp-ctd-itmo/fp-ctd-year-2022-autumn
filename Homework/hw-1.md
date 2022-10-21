@@ -227,7 +227,7 @@ Task 6
 
 1. Create a module named `HW1.T6`.
 
-2. Using `Foldable` methods *only*, implement the following function:
+2. Using `Foldable` methods *only*\*, implement the following function:
 
    ```
    mcat :: Monoid a => [Maybe a] -> a
@@ -242,6 +242,7 @@ Task 6
    ghci> Data.Monoid.getSum $ mcat [Nothing, Just 2, Nothing, Just 40]
    42
    ```
+   \* Means that the only allowed import in `HW1.T6` is `Data.Foldable`
 
 3. Using `foldMap` to consume the list, implement the following function:
 
