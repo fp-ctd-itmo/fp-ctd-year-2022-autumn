@@ -391,7 +391,7 @@ Task 6
 
    ```
    pChar :: Parser Char
-   pChar = P $ ES \(pos, s) ->
+   pChar = P $ ES $ \(pos, s) ->
      case s of
        []     -> Error (ErrorAtPos pos)
        (c:cs) -> Success (c :# (pos + 1, cs))
